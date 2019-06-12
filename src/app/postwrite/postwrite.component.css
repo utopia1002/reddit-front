@@ -1,0 +1,115 @@
+section{
+  margin: 0;
+  display: flex;
+}
+div.main{
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 100px;
+  margin-right: 20px;
+  color: #111;
+  flex: 3;
+}
+div.sidebar{
+  flex:1;
+}
+div.title{
+  background-color: #fff;
+  display: inline-block;
+  height: 5vh;
+  margin-top: 30px;
+  border-radius: 4px;
+  border: solid 1px #fff;
+  display: flex;
+  padding-left: 10px;
+}
+div.title>h3{
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+}
+
+div.detail{
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 4px;
+  border: solid 1px #fff;
+  background-color: #fff;
+  /* display: flex; */
+  /* padding: 20px; */
+}
+div.container{
+  display: flex;
+  margin: 20px 5px;
+}
+div.container>a{
+  flex: 3;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #000;
+  width: 100%;
+  height: 5vh;
+}
+div.container>h5{
+  text-align: right;
+  width: 100%;
+  margin: 10px 40px;
+}
+div.inner{
+  flex:1;
+  text-align: center;
+}
+div.detail>h5{
+  display: flex;
+  justify-content: flex-end;
+  vertical-align: bottom;
+  align-items: flex-end;
+  width: 100%;
+  margin-right: 10px;
+  height: 5vh;
+  margin: 0;
+}
+div.button{
+  text-align: right;
+}
+div.button>button{
+  margin-top : 20px;
+  height: 30px;
+  width: 50px;
+}
+div.button>button.submit{
+  background-color: #1656bc;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 20px;
+}
+div.button>button.cancel{
+  border: none;
+  border-radius: 3px;
+  font-weight: 700;
+}
+.title>input{
+  border: none;
+  font-size: 18px;
+  width: 80%;
+  margin: 4px 0;
+}
+.container>input{
+  border: none;
+  font-size: 24px;
+  width: 80%;
+  margin: 4px 0;
+}
+div.dropdown{
+  text-align: right;
+  margin-top: 20px;
+}
+div.dropdown>select{
+  width: 15%;
+  height: 100%;
+  text-align-last:center;
+}

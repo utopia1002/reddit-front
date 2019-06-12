@@ -1,0 +1,57 @@
+<section>
+  <div class="main">
+    <div class="title">
+      <input #title placeholder="post title">
+    </div>
+    <div class="detail">
+      <div class="container">
+        <input #content placeholder="Share Link!" >
+      </div>
+    </div>
+    <div class="dropdown">
+      <select [(ngModel)]="selectedOption">
+        <option [ngValue]="" selected>-- 선택 --</option>
+        <option *ngFor="let category of category" [ngValue]="category.name">{{category.name}}</option>
+      </select>
+    </div>
+    <div class="button">
+      <button class="submit" (click)="write(title,content)">등록</button>
+      <button class="cancel">취소</button>
+    </div>
+  </div>
+
+  <!-- <div class="main">
+    <div class="title">
+      <input *ngIf="!id" #title placeholder="post title">
+      <input *ngIf="id" #title value={{editingpost.content}}>
+    </div>
+
+    <div class="detail">
+      <div class="container">
+        <input *ngIf="!id" #content placeholder="Share Link!" >
+        <input *ngIf="id" #content value={{editingpost.link}}>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <select *ngIf="!id" [(ngModel)]="selectedOption">
+        <option [ngValue]="">-- 선택 --</option>
+        <option *ngFor="let category of category"
+          [ngValue]=category.name.value>{{category.name}}</option>
+      </select>
+      <select *ngIf="id" [(ngModel)]="selectedOption">
+        <option [ngValue]="">-- 선택 --</option>
+        <option *ngFor="let category of category"
+          [ngValue]=category.name.value>{{category.name}}</option>
+      </select> -->
+
+
+    <!-- </div>
+    <div class="button">
+      <button class="submit" (click)="write(title,content)">등록</button>
+      <button class="cancel">취소</button>
+    </div> -->
+  <div class="sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
+</section>

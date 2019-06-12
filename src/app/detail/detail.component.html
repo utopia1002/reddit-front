@@ -1,0 +1,29 @@
+<section>
+  <div class="main">
+    <div class="title">
+      <h3>{{post.content}}</h3>
+    </div>
+    <div class="detail">
+      <div class="container">
+        <a href={{post.link}}>{{post.link}}</a><br>
+        <div class="inner">
+          <i class="fas fa-arrow-up"></i>
+          <div>{{post.like}}</div>
+          <i class="fas fa-arrow-down"></i>
+        </div>
+      </div>
+      <div class="container">
+        <h5 class="writer">{{post.writer}}에 의해 작성됨</h5>
+        <h5>{{post.date}}</h5>
+      </div>
+    </div>
+    <div class="undermenu">
+      <a>목록보기</a>
+      <a (click)="postedit()">글수정</a>
+      <a (click)="postremove()">글삭제</a>
+    </div>
+  </div>
+  <div class="sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
+</section>

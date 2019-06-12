@@ -1,0 +1,16 @@
+<section>
+  <div class="category-view">
+    <h4>카테고리별 보기</h4>
+    <ul>
+      <li *ngFor="let category of category" (click)="search(category)">
+        {{category.name}}({{category.count}})
+      </li>
+    </ul>
+    <h4>최근 게시물</h4>
+    <ul>
+      <li *ngFor="let recent of recent">
+        {{recent.content}}
+      </li>
+    </ul>
+  </div>
+</section>

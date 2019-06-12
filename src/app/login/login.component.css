@@ -1,0 +1,48 @@
+.login{
+  height: 100vh;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+h3{
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin-top:0;
+}
+input.loginform{
+  height: 40px;
+  width: 280px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+button.signin{
+  width: 280px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 20px;
+  height: 40px;
+  background-color: #3878e0;
+  color: #eee;
+  font-weight: 500;
+}
+button.signup{
+  margin-top: 10px;
+  width: 280px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 20px;
+  height: 40px;
+  background-color: #f74fd0;
+  color: #eee;
+  font-weight: 500;
+}

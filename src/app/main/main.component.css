@@ -1,0 +1,83 @@
+section{
+  margin: 0;
+  display: flex;
+}
+div.main{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 60px;
+  margin-right: 20px;
+  color: #111;
+  flex: 3;
+}
+div.main>ul{
+  list-style: none;
+  width : 100%;
+  justify-content: center;
+}
+div.main>ul>li{
+  border: 1px solid #aaa;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.like{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  border-right: 1px solid #aaa;
+  background-color: #b3c5e2;
+  color: #fff;
+  text-align: center;
+}
+.like.inner{
+  margin-left: auto;
+  margin-right: auto;
+}
+.content{
+  flex: 9;
+  margin-left: 20px;
+}
+div.sidebar{
+  flex:1;
+}
+div.sub{
+  display: flex;
+}
+div.sub-menu{
+  margin: 10px 0px;
+  flex:1;
+}
+div.sub-menu2{
+  margin: 10px 0px;
+  flex:1;
+  text-align: right;
+}
+div.sub-menu2>a{
+  margin-left: 10px;
+}
+div.sub-menu>a{
+  border: 1px solid #888;
+  border-radius: 5px;
+  background-color: #666;
+  color : #fff;
+  font-size: 18px;
+}
+.upPost i.fa-arrow-up{
+  color: #111;
+}
+.downPost i.fa-arrow-down{
+  color: #111;
+}
+i:hover{
+  cursor: Pointer;
+}
+.content:hover{
+  cursor: Pointer;
+}

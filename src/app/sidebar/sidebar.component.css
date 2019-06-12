@@ -1,0 +1,22 @@
+section{
+  margin: 0;
+}
+.category-view{
+  padding-left: 30px;
+}
+.category-view>h4{
+  margin-top : 30px;
+  margin-bottom: 5px;
+}
+.category-view>ul{
+  padding: 0;
+  list-style: none;
+  margin:0;
+}
+.category-view>ul>li{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 300px;
+  margin-bottom: 10px;
+}

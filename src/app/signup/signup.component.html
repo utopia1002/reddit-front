@@ -1,0 +1,13 @@
+<div class="signup-main">
+  <form>
+    <h3>SEDDIT에 회원가입 하시면 더 많은 서비스를 이용할 수 있습니다</h3>
+    <input placeholder="이메일을 입력해주세요" #email>
+    <input placeholder="이름을 입력해주세요" #name>
+    <input placeholder="비밀번호를 입력해주세요" type="password" #password >
+    <input placeholder="비밀번호 확인" type="password" #check >
+    <div class="signup-btn">
+      <button class="signup-btn-check signup-btn-common" (click)="signup(email,name,password,check)">회원가입</button>
+      <button class="signup-btn-cancel signup-btn-common" (click)="gohome()">홈으로</button>
+    </div>
+  </form>
+</div>

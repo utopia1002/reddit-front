@@ -1,0 +1,34 @@
+<section>
+  <div class="main">
+    <ul>
+      <div class="sub">
+        <div class="sub-menu">
+          <a [routerLink]="['/post/add/']">글쓰기</a>
+        </div>
+        <div class="sub-menu2">
+          <a (click)="orderby_rec()">추천순</a>
+          <a (click)="orderby_date()">날짜순</a>
+        </div>
+      </div>
+      <li *ngFor="let post of post"
+        [class.upPost]="post.upUser.includes(user_id)"
+        [class.downPost]="post.downUser.includes(user_id)">
+        <div class="like">
+          <div class="inner">
+            <i class="fas fa-arrow-up" (click)="recommandUp(post.id)"></i>
+            <div>{{post.like_total}}</div>
+            <i class="fas fa-arrow-down" (click)="recommandDown(post.id)"></i>
+          </div>
+        </div>
+        <div class="content" [routerLink]="['/post/', post.id]">
+          <h4>{{post.content}}</h4>
+          <h5>{{post.category.name}}</h5>
+          <h5><a href={{post.link}}>{{post.link}}</a></h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
+</section>
